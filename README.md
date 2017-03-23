@@ -34,7 +34,7 @@ Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offer
 <img src="image/missing_value.png" alt="Table 1"><br> 
 
 <p>
-Figure 1: Missing Value<br>
+<i>Figure 1: Missing Value</i><br>
 According to Figure 1:<br>
 </p>
 <ul>
