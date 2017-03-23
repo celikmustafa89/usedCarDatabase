@@ -30,13 +30,15 @@
 <p align="left">
 Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offerType, price, abtest, vehicleType, yearOfRegistration, gearbox, powerPS, model, kilometer, monthOfRegistration, fuelType, brand, notRepairedDamage, dateCreated, nrOfPictures, postalCode, lastSeen]. 
 </p>
-<img src="image/table_1.png" alt="Table 1">
-Figure 1: Missing Value
-According to Figure 1:
+<img src="image/table_1.png" alt="Table 1"> <br>
+<p align="left">
+Figure 1: Missing Value<br>
+According to Figure 1:<br>
 •	5 columns [vehicleType, gearbox, model, fuelType, notRepairedDamage] have missing values. Depending on the model, these columns can be removed completely. However, these columns could be important for the model. So, the records that have null values can be removed. By removing the null values column can be saved for the model. In the table, notRepairedDamage column has 72060 missing value which is the 19% of the whole dataset. In this case, removing each record is not the best option. It seems better to drop whole column.
 •	In the whole dataset, 110572 records has at least one missing value. Removing these records are not the best option because it causes 33% data loss. So, data loss can be decreased by dropping some non-important columns or a representing value can be assigned the missing values.
 According to Table 1 and the Histogram Graph of the columns:
 •	dateCrawled (280500), name (233531), lastSeen (182806) columns have too many unique values. Depending on the learning model, these columns can be dropped.
+</p>
 Column Name	Total Number of Null Value	Unique
 dateCrawled              	0	280500
 name                    	0	233531
