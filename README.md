@@ -150,7 +150,7 @@ Dataset consists of <b><font color="#ffbf00">371528 rows</font></b> and <b><font
  <img src="image/notRepairedDamage.png"> 
  
 <ul>
-   <li>Based on histogram of the <b><font color="#ffbf00">brand</font></b>, this column has 40 different values. It has consistent records and can be useful for the model.</li>
+   <li>Based on histogram of the <b><font color="#ffbf00">brand</font></b>, this column has 40 different values. It has consistent records and can be useful for the model. Also, it can be said that volkswagen is the most popular car.</li>
 </ul>
  
  <img src="image/brand.png"> 
@@ -199,6 +199,22 @@ After that, cleaned dataset is preprocessed using WEKA. WEKA attribute evaluator
 
 
 <h1><font color="#ffbf00">5.	CONCLUSION and IMPROVEMENT POINTS</font></h1>
+<p>
+First 20 prediction of the both model is on the below table.<br>
+Python Sklearn Regression model has lower error than the WEKA model.<br>
+It gives pretty good result for such a simple model. <br>
+In order to improve the model:<br>
+- dataset cleaning could be more effienct. According to histogram graph of the attributes, they have lots of inconsistent values.<br>
+- age of the car attribute can improve the model. <font color="#ffbf00">Age attribute</font> could be extracted by using registrationDate and dateCreated attributes.<br>
+- according to attributeselection filter of the WEKA, <font color="#ffbf00">"kilometer"</font> and <font color="#ffbf00">"powerPS"</font> attributes are the most important ones.<br>
+- 
+
+</p>
+<font color="#ffbf00"><h3>Following results are taken from python sklearn model:</h3></font>
+<font color="#ffbf00">Root mean squared error: 555.6768635632562</font><br>
+mean_absulute_error: <font color="#ffbf00">397.8973442835626</font><br>
+mean_squared_error: <font color="#ffbf00">308776.7766994987</font><br>
+
 <font color="#ffbf00"><h3>Following results are taken from WEKA model:</h3></font>
 <font color="#ffbf00">Root mean squared error:4958.1553</font><br>
 Mean absolute error:                   <font color="#ffbf00">3103.1781</font><br>
@@ -207,14 +223,9 @@ Relative absolute error:                 <font color="#ffbf00">56.7852 %</font><
 Root relative squared error:             <font color="#ffbf00">61.7716 %</font><br>
 Total Number of Instances:            <font color="#ffbf00">82763</font>   <br><br>
 
-
-<font color="#ffbf00"><h3>Following results are taken from python sklearn model:</h3></font>
-<font color="#ffbf00">Root mean squared error: 555.6768635632562</font><br>
-mean_absulute_error: <font color="#ffbf00">397.8973442835626</font><br>
-mean_squared_error: <font color="#ffbf00">308776.7766994987</font><br>
-
 <font color="#ffbf00"><h1>PYTHON SKLEARN LINEAR REGRESSION MODEL RESULT</h1></font>
 <p>Root mean squared error:               555.6768635632562<br></p>
+
 
 <table border="2">
 <tr>
@@ -230,7 +241,7 @@ mean_squared_error: <font color="#ffbf00">308776.7766994987</font><br>
 <tr><td>8</td><td align="right">3062</td><td align="right">2340.980</td><td align="right">721.019</td></tr>
 <tr><td>9</td><td align="right">2273</td><td align="right">1970.432</td><td align="right">302.567</td></tr>
 <tr><td>10</td><td align="right">897</td><td align="right">1485.134</td><td align="right">588.134</td></tr>
-<tr><td>11</td><td align="right">2006</td><td align="right">2126.953></td><td align="right">120.953</td></tr>
+<tr><td>11</td><td align="right">2006</td><td align="right">2126.953</td><td align="right">120.953</td></tr>
 <tr><td>12</td><td align="right">1225</td><td align="right">1281.999</td><td align="right">56.999</td></tr>
 <tr><td>13</td><td align="right">1149</td><td align="right">695.919</td><td align="right">453.080</td></tr>
 <tr><td>14</td><td align="right">1863</td><td align="right">1228.076</td><td align="right">634.923</td></tr>
