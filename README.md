@@ -176,22 +176,27 @@ Other one uses <b><font color="#ffbf00">33%</font></b> for testing issue
 </p>
 
 <h1><font color="#ffbf00">4.	MODELLING</font></h1>
-<p>Before the implementation of the model. Dataset is cleaned using python libraries, and total number of column is decreased to 10 [<i>'vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model','kilometer', 'fuelType', 'brand', 'notRepairedDamage', 'price'</i>]. 
-</p>
-<h5><font color="#ffbf00">There are 2 different implementation of linear regression model:</font></h5>
-<p> 
-First model is implemented using <font color="#ffbf00">python sklearn library</font>.<br>
-It has <font color="#ffbf00">10</font> attributes.<br>
-<font color="#ffbf00">30 percentage</font> of the dataset is used for testing.<br>
 
-Second model is implemented using <font color="#ffbf00">WEKA</font>.<br>
-<font color="#ffbf00">Attributeselectio</font>n filter of WEKA applied on the dataset.<br>
-Filter removed the <font color="#ffbf00">3</font> attributes. Remaining <font color="#ffbf00">7</font> attributes are used for learning.<br>
-<font color="#ffbf00">33 percentage</font> of the dataset is used for testing.<br>
+<p>
+Before the implementation of the model. Dataset is cleaned using python libraries, and total number of column is decreased to 10 [<i>'vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model','kilometer', 'fuelType', 'brand', 'notRepairedDamage', 'price'</i>]. 
 </p>
+
 <p>
 After that, cleaned dataset is preprocessed using WEKA. WEKA attribute evaluator selected some attributes. It suggests the following attributes for the model [<i>'yearOfRegistration', 'gearbox', 'powerPS' ,'kilometer', 'fuelType', 'notRepairedDamage</i>].
 </p>
+
+<h3><font color="#ffbf00">There are 2 different implementation of linear regression model:</font></h3>
+<ul>
+   <li>First model is implemented using <font color="#ffbf00">python sklearn library</font>.</li><br>
+       It has <font color="#ffbf00">10</font> attributes.<br>
+       <font color="#ffbf00">30 percentage</font> of the dataset is used for testing.<br>
+
+   <li>Second model is implemented using <font color="#ffbf00">WEKA</font>.</li><br>
+       <font color="#ffbf00">Attributeselectio</font>n filter of WEKA applied on the dataset.<br>
+       Filter removed the <font color="#ffbf00">3</font> attributes. Remaining <font color="#ffbf00">7</font> attributes are used for learning.<br>
+       <font color="#ffbf00">33 percentage</font> of the dataset is used for testing.<br>
+</ul>
+
 
 <h1><font color="#ffbf00">5.	CONCLUSION and IMPROVEMENT POINTS</font></h1>
 <font color="#ffbf00">Following results are taken from WEKA model:</font> <br>
