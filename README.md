@@ -1,9 +1,4 @@
 
-
-<html>
-<head>
-<title>Predictions for dataset clean_data-weka.filters.unsupervised.attribute.Remove-R1,5,8</title>
-</head>
 <body>
 <div align="center">
 
@@ -604,17 +599,3 @@ Time taken to build model: 0.27 seconds
 </table>
 </div>
 </body>
-</html>
-
-=== Evaluation on test split ===
-
-Time taken to test model on test split: 68.48 seconds
-
-=== Summary ===
-
-Correlation coefficient                  0.7864
-Mean absolute error                   3103.1781
-Root mean squared error               4958.1553
-Relative absolute error                 56.7852 %
-Root relative squared error             61.7716 %
-Total Number of Instances            82763     
