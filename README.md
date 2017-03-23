@@ -37,7 +37,7 @@ Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offer
 Figure 1: Missing Value<br>
 According to Figure 1:<br>
 </p>
-<ul>
+<ul align="left">
    <li>
    5 columns [vehicleType, gearbox, model, fuelType, notRepairedDamage] have missing values. Depending on the model, these columns can be removed completely. However, these columns could be important for the model. So, the records that have null values can be removed. By removing the null values column can be saved for the model. In the table, notRepairedDamage column has 72060 missing value which is the 19% of the whole dataset. In this case, removing each record is not the best option. It seems better to drop whole column.
    </li>
