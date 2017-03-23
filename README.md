@@ -187,11 +187,11 @@ After that, cleaned dataset is preprocessed using WEKA. WEKA attribute evaluator
 
 <h3><font color="#ffbf00">There are 2 different implementation of linear regression model:</font></h3>
 <ul>
-   <li>First model is implemented using <font color="#ffbf00">python sklearn library</font>.</li><br>
+   <li>First model is implemented using <font color="#ffbf00">python sklearn library</font>.</li>
        It has <font color="#ffbf00">10</font> attributes.<br>
        <font color="#ffbf00">30 percentage</font> of the dataset is used for testing.<br>
-
-   <li>Second model is implemented using <font color="#ffbf00">WEKA</font>.</li><br>
+<br>
+   <li>Second model is implemented using <font color="#ffbf00">WEKA</font>.</li>
        <font color="#ffbf00">Attributeselectio</font>n filter of WEKA applied on the dataset.<br>
        Filter removed the <font color="#ffbf00">3</font> attributes. Remaining <font color="#ffbf00">7</font> attributes are used for learning.<br>
        <font color="#ffbf00">33 percentage</font> of the dataset is used for testing.<br>
@@ -199,7 +199,7 @@ After that, cleaned dataset is preprocessed using WEKA. WEKA attribute evaluator
 
 
 <h1><font color="#ffbf00">5.	CONCLUSION and IMPROVEMENT POINTS</font></h1>
-<font color="#ffbf00">Following results are taken from WEKA model:</font> <br>
+<font color="#ffbf00"><h3>Following results are taken from WEKA model:</h3></font> <br>
 Correlation coefficient:                  <font color="#ffbf00">0.7864</font><br>
 Mean absolute error:                   <font color="#ffbf00">3103.1781</font><br>
 <font color="#ffbf00">Root mean squared error:</font>               <font color="#ffbf00">4958.1553</font><br>
@@ -208,10 +208,10 @@ Root relative squared error:             <font color="#ffbf00">61.7716 %</font><
 Total Number of Instances:            <font color="#ffbf00">82763</font>   <br>
 
 
-<font color="#ffbf00">Following results are taken from python sklearn model:</font> <br>
-<font color="#ffbf00">RMSE ERROR: 555.6768635632562</font>
-mean_absulute_error: <font color="#ffbf00">397.8973442835626</font>
-mean_squared_error: <font color="#ffbf00">308776.7766994987</font>
+<font color="#ffbf00"><h3>Following results are taken from python sklearn model:</h3></font> <br>
+<font color="#ffbf00">RMSE ERROR: 555.6768635632562</font><br>
+mean_absulute_error: <font color="#ffbf00">397.8973442835626</font><br>
+mean_squared_error: <font color="#ffbf00">308776.7766994987</font><br>
 
 <table border="1">
 <tr>
