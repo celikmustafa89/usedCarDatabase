@@ -4,31 +4,31 @@
 
 <h1>1.	DATASET</h1>
 <p>
-1.	<b>dateCrawled</b> : <i>when this ad was first crawled, all field-values are taken from this date</i> <br>
-2.	<b>name</b> : <i>"name" of the car </i><br>
-3.	<b>seller</b> : <i>private or dealer </i><br>
-4.	<b>offerType</b> : <i>the selling type of the car </i><br>
-5.	<b>price</b> : <i>the price on the ad to sell the car </i><br>
-6.	<b>abtest</b> : <i>unknown </i><br>
-7.	<b>vehicleType</b> : <i>type of the car. Limousine, kleinwagen, kombi, bus etc. </i><br>
-8.	<b>yearOfRegistration</b> : <i>at which year the car was first registered</i><br>
-9.	<b>gearbox</b> : <i>manuel or otomatic</i><br>
-10.	<b>powerPS</b> : <i>power of the car in PS</i><br>
-11.	<b>model</b> : <i>model of the car</i><br>
-12.	<b>kilometer</b> : <i>how many kilometers the car has driven</i><br>
-13.	<b>monthOfRegistration</b> : <i>at which month the car was first registered</i><br>
-14.	<b>fuelType</b> : <i>benzin, diesel, lpg etc</i><br>
-15.	<b>brand</b> : <i>brand of the car. Mercedes, Porsche, audi etc…</i><br>
-16.	<b>notRepairedDamage</b> : <i>if the car has a damage which is not repaired yet. Yes or no</i><br>
-17.	<b>dateCreated</b> : <i>the date for which the ad at ebay was created</i><br>
-18.	<b>nrOfPictures</b> : <i>number of pictures in the ad </i><br>
-19.	<b>postalCode</b> : <i>code that shows the location of the car</i><br>
-20.	<b>lastSeenOnline</b> : <i>when the crawler saw this ad last online</i><br>
+1.	<b><font color="#ffbf00">dateCrawled</font></b> : <i>when this ad was first crawled, all field-values are taken from this date</i> <br>
+2.	<b><font color="#ffbf00">name</font></b> : <i>"name" of the car </i><br>
+3.	<b><font color="#ffbf00">seller</font></b> : <i>private or dealer </i><br>
+4.	<b><font color="#ffbf00">offerType</font></b> : <i>the selling type of the car </i><br>
+5.	<b><font color="#ffbf00">price</font></b> : <i>the price on the ad to sell the car </i><br>
+6.	<b><font color="#ffbf00">abtest</font></b> : <i>unknown </i><br>
+7.	<b><font color="#ffbf00">vehicleType</font></b> : <i>type of the car. Limousine, kleinwagen, kombi, bus etc. </i><br>
+8.	<b><font color="#ffbf00">yearOfRegistration</font></b> : <i>at which year the car was first registered</i><br>
+9.	<b><font color="#ffbf00">gearbox</font></b> : <i>manuel or otomatic</i><br>
+10.	<b><font color="#ffbf00">powerPS</font></b> : <i>power of the car in PS</i><br>
+11.	<b><font color="#ffbf00">model</font></b> : <i>model of the car</i><br>
+12.	<b><font color="#ffbf00">kilometer</font></b> : <i>how many kilometers the car has driven</i><br>
+13.	<b><font color="#ffbf00">monthOfRegistration</font></b> : <i>at which month the car was first registered</i><br>
+14.	<b><font color="#ffbf00">fuelType</font></b> : <i>benzin, diesel, lpg etc</i><br>
+15.	<b><font color="#ffbf00">brand</font></b> : <i>brand of the car. Mercedes, Porsche, audi etc…</i><br>
+16.	<b><font color="#ffbf00">notRepairedDamage</font></b> : <i>if the car has a damage which is not repaired yet. Yes or no</i><br>
+17.	<b><font color="#ffbf00">dateCreated</font></b> : <i>the date for which the ad at ebay was created</i><br>
+18.	<b><font color="#ffbf00">nrOfPictures</font></b> : <i>number of pictures in the ad </i><br>
+19.	<b><font color="#ffbf00">postalCode</font></b> : <i>code that shows the location of the car</i><br>
+20.	<b><font color="#ffbf00">lastSeenOnline</font></b> : <i>when the crawler saw this ad last online</i><br>
 </p>
 
 <h1>2.	DATA EXPLORATION</h1>
 <p>
-Dataset consists of <b>371528 rows</b> and <b>20 columns</b> [<i>dateCrawled, name, seller, offerType, price, abtest, vehicleType, yearOfRegistration, gearbox, powerPS, model, kilometer, monthOfRegistration, fuelType, brand, notRepairedDamage, dateCreated, nrOfPictures, postalCode, lastSeen</i>]. 
+Dataset consists of <b><font color="#ffbf00">371528 rows</font></b> and <b><font color="#ffbf00">20 columns</font></b> [<i>dateCrawled, name, seller, offerType, price, abtest, vehicleType, yearOfRegistration, gearbox, powerPS, model, kilometer, monthOfRegistration, fuelType, brand, notRepairedDamage, dateCreated, nrOfPictures, postalCode, lastSeen</i>]. 
 </p>
 
 <img src="image/missing_value.png" alt="Table 1"><br> 
@@ -38,11 +38,11 @@ Dataset consists of <b>371528 rows</b> and <b>20 columns</b> [<i>dateCrawled, na
 <h3>According to Figure 1:</h3>
 <ul>
    <li>
-   <b>5 columns</b> [<i>vehicleType, gearbox, model, fuelType, notRepairedDamage</i>] have missing values. Depending on the model, these columns can be removed completely. However, these columns could be important for the model. So, the records that have null values can be removed. By removing the null values column can be saved for the model. In the table, notRepairedDamage column has <b>72060 missing value</b> which is the <b>19%</b> of the whole dataset. In this case, removing each record is not the best option. It seems better to drop whole column.
+   <b><font color="#ffbf00">5 columns</font></b> [<i>vehicleType, gearbox, model, fuelType, notRepairedDamage</i>] have missing values. Depending on the model, these columns can be removed completely. However, these columns could be important for the model. So, the records that have null values can be removed. By removing the null values column can be saved for the model. In the table, notRepairedDamage column has <b><font color="#ffbf00">72060 missing value</font></b> which is the <b><font color="#ffbf00">19%</font></b> of the whole dataset. In this case, removing each record is not the best option. It seems better to drop whole column.
    </li>
 
    <li>
-   In the whole dataset, <b>110572</b> records has at least one missing value. Removing these records are not the best option because it causes  <b>33% data loss</b>. So, data loss can be decreased by dropping some non-important columns or a representing value can be assigned the missing values.
+   In the whole dataset, <b><font color="#ffbf00">110572</font></b> records has at least one missing value. Removing these records are not the best option because it causes  <b><font color="#ffbf00">33% data loss</font></b>. So, data loss can be decreased by dropping some non-important columns or a representing value can be assigned the missing values.
    </li>
 </ul>
 
@@ -56,123 +56,123 @@ Dataset consists of <b>371528 rows</b> and <b>20 columns</b> [<i>dateCrawled, na
 
 
 <ul>
-   <li>Histogram of <b>nrOfPictures</b> column and Table 1 says that this column has only one values and it has no meaning for model and visualization. This column can be dropped.</li>
+   <li>Histogram of <b><font color="#ffbf00">nrOfPictures</font></b> column and Table 1 says that this column has only one values and it has no meaning for model and visualization. This column can be dropped.</li>
 </ul>
 
 <img src="image/nrOfPictures.png"> 
 
 <ul>
-   <li>Histogram graph of <b>seller</b> column and Table 1 says that this column has 2 unique values and “gewerblich” value has only 3 records. So, this column has no distinguishing information for the model. This column can be dropped, but first the records that has “gewerblich” value should be removed.</li>
+   <li>Histogram graph of <b><font color="#ffbf00">seller</font></b> column and Table 1 says that this column has 2 unique values and “gewerblich” value has only 3 records. So, this column has no distinguishing information for the model. This column can be dropped, but first the records that has “gewerblich” value should be removed.</li>
 </ul>
 
  <img src="image/seller.png"> 
  
 <ul>
-   <li>Based on histogram graph of <b>offerType</b>, Table 1 and column description, this column has 2 unique values. “gesuch” value has only 12 records. So, this column has no distinguishing information for the model. This column can be dropped, after removing the records that has “gesuch” value. </li>
+   <li>Based on histogram graph of <b><font color="#ffbf00">offerType</font></b>, Table 1 and column description, this column has 2 unique values. “gesuch” value has only 12 records. So, this column has no distinguishing information for the model. This column can be dropped, after removing the records that has “gesuch” value. </li>
 </ul>
 
 <img src="image/offerType.png"> 
 
 <ul>
-   <li>Based on histogram graph of <b>abtest</b> and Table 1, this column has consistent values for the model. </li>
+   <li>Based on histogram graph of <b><font color="#ffbf00">abtest</font></b> and Table 1, this column has consistent values for the model. </li>
 </ul>
 
 <img src="image/abtest.png"> 
 
 <ul>
-   <li>Based on histogram graph of <b>monthOfRegistration</b> and Table 1, this column should have 12 unique values. However, it has 13 values. Also, dataset has yearOfRegistration column. So, this column can be dropped.</li>
+   <li>Based on histogram graph of <b><font color="#ffbf00">monthOfRegistration</font></b> and Table 1, this column should have 12 unique values. However, it has 13 values. Also, dataset has yearOfRegistration column. So, this column can be dropped.</li>
 </ul>
  
  <img src="image/monthOfRegistration.png"> 
  
 <ul>
-   <li><b>postalCode</b> column has <b>8150</b> unique values. This information can be used to determine the location of the car. However, for the model, location is not a distinguishing information because all car has postal code in Germany. Car location does not affect the model. This column can be dropped.</li>
+   <li><b><font color="#ffbf00">postalCode</font></b> column has <b><font color="#ffbf00">8150</font></b> unique values. This information can be used to determine the location of the car. However, for the model, location is not a distinguishing information because all car has postal code in Germany. Car location does not affect the model. This column can be dropped.</li>
 </ul>
  
 <img src="image/postalCode.png"> 
 
 <ul>
-   <li><b>dateCreated</b> column has <b>114</b> unique values. This column has no distinguishing information for the model. So, this column can be dropped</li>
+   <li><b><font color="#ffbf00">dateCreated</font></b> column has <b><font color="#ffbf00">114</font></b> unique values. This column has no distinguishing information for the model. So, this column can be dropped</li>
 </ul>
  
  <img src="image/dateCreated.png"> 
  
 <ul>
-   <li>Based on histogram of <b>price</b> column and its description, this column has <b>10772</b> records that has <b>0</b> value which means the car is free. Also, records have some value more than <b>100000 euro</b>. It is not a consistent variable because cars can’t be that much expensive. To make dataset more consistent, prices values which are <b>0</b> and larger than <b>100000</b> can be removed. The histogram graph of price column are below. <b>First</b> graph shows the <b>original distribution</b> of the prices. <b>Second</b> graph shows the prices without <b>free cars</b>. <b>Third</b> graph shows the prices <b>between 0 and 100000 euro</b>. Other records can be removed from the dataset to have consistent values.  </li>
+   <li>Based on histogram of <b><font color="#ffbf00">price</font></b> column and its description, this column has <b><font color="#ffbf00">10772</font></b> records that has <b><font color="#ffbf00">0</font></b> value which means the car is free. Also, records have some value more than <b><font color="#ffbf00">100000 euro</font></b>. It is not a consistent variable because cars can’t be that much expensive. To make dataset more consistent, prices values which are <b><font color="#ffbf00">0</font></b> and larger than <b><font color="#ffbf00">100000</font></b> can be removed. The histogram graph of price column are below. <b><font color="#ffbf00">First</font></b> graph shows the <b><font color="#ffbf00">original distribution</font></b> of the prices. <b><font color="#ffbf00">Second</font></b> graph shows the prices without <b><font color="#ffbf00">free cars</font></b>. <b><font color="#ffbf00">Third</font></b> graph shows the prices <b><font color="#ffbf00">between 0 and 100000 euro</font></b>. Other records can be removed from the dataset to have consistent values.  </li>
 </ul>
  
  <img src="image/price_100.png"> 
 
 <ul>
-   <li>Based on histogram of <b>yearsOfRegistration</b> column and its description result, this column has inconsistent values. For example, it has year values larger than <b>2017</b>. Also, there are some values smaller than <b>1900</b> which does not make sense because in that time engine did not invented. So, yersOfRegistration records can be limited between <b>1900- yearsOfRegistration-2017</b>.</li>
+   <li>Based on histogram of <b><font color="#ffbf00">yearsOfRegistration</font></b> column and its description result, this column has inconsistent values. For example, it has year values larger than <b><font color="#ffbf00">2017</font></b>. Also, there are some values smaller than <b><font color="#ffbf00">1900</font></b> which does not make sense because in that time engine did not invented. So, yersOfRegistration records can be limited between <b><font color="#ffbf00">1900- yearsOfRegistration-2017</font></b>.</li>
 </ul>
  
  <img src="image/yearsOfRegistration.png"> 
  
 <ul>
-   <li>Based on histogram of <b>powerPS</b> and Table 1, this column has some inconsistent values. powerPS can’t be less than <b>0</b>. Also, powerPS can’t be stronger than <b>1000</b>. So, it can be limited between 0-powerPS-1000. Other records can be removed from the dataset to have consistent values.</li>
+   <li>Based on histogram of <b><font color="#ffbf00">powerPS</font></b> and Table 1, this column has some inconsistent values. powerPS can’t be less than <b><font color="#ffbf00">0</font></b>. Also, powerPS can’t be stronger than <b><font color="#ffbf00">1000</font></b>. So, it can be limited between 0-powerPS-1000. Other records can be removed from the dataset to have consistent values.</li>
 </ul>
 
 <ul>
-   <li>Based on histogram of <b>fuelType</b> and Table 1, this column has 7 different value type. Apart from <b>“benzin”</b> and <b>“diesel”</b>, other values have very low records. So, these values do not mean much for the model. These records can be removed from the dataset.</li>
+   <li>Based on histogram of <b><font color="#ffbf00">fuelType</font></b> and Table 1, this column has 7 different value type. Apart from <b><font color="#ffbf00">“benzin”</font></b> and <b><font color="#ffbf00">“diesel”</font></b>, other values have very low records. So, these values do not mean much for the model. These records can be removed from the dataset.</li>
 </ul>
  
  <img src="image/fuelType.png"> 
  
 <ul>
-   <li>Based on <b>vehicleType</b> histogram and Table 1, it has 8 different values. Values are consistent and can be used for the model.</li>
+   <li>Based on <b><font color="#ffbf00">vehicleType</font></b> histogram and Table 1, it has 8 different values. Values are consistent and can be used for the model.</li>
 </ul>
  
  <img src="image/vehicleType.png"> 
  
 <ul>
-   <li>Based on histogram of <b>model</b> and Table 1, this column has many different values. It can be useful for price prediction but to make the model simpler this column can be dropped. </li>
+   <li>Based on histogram of <b><font color="#ffbf00">model</font></b> and Table 1, this column has many different values. It can be useful for price prediction but to make the model simpler this column can be dropped. </li>
 </ul>
  
 <img src="image/model.png"> 
 
 <ul>
-   <li>Based on histogram of <b>kilometer</b> and table 1, this column has consistent values. Also, it can be useful for the model.</li>
+   <li>Based on histogram of <b><font color="#ffbf00">kilometer</font></b> and table 1, this column has consistent values. Also, it can be useful for the model.</li>
 </ul>
  
  <img src="image/kilometer.png"> 
  
 <ul>
-   <li>Based on histogram of <b>gearbox</b> and Table 1, this column has 2 different values and values are consistent.</li>
+   <li>Based on histogram of <b><font color="#ffbf00">gearbox</font></b> and Table 1, this column has 2 different values and values are consistent.</li>
 </ul>
                
 <img src="image/gearbox.png"> 
                
 <ul>
-   <li>Based on histogram of <b>notRepairedDamage</b>, this column has 2 different values. Values are consistent and can be useful for the model.</li>
+   <li>Based on histogram of <b><font color="#ffbf00">notRepairedDamage</font></b>, this column has 2 different values. Values are consistent and can be useful for the model.</li>
 </ul>
  
  <img src="image/notRepairedDamage.png"> 
  
 <ul>
-   <li>Based on histogram of the <b>brand</b>, this column has 40 different values. It has consistent records and can be useful for the model.</li>
+   <li>Based on histogram of the <b><font color="#ffbf00">brand</font></b>, this column has 40 different values. It has consistent records and can be useful for the model.</li>
 </ul>
  
  <img src="image/brand.png"> 
  
 <ul>
-   <li>Based on <b>year v.s. price graph</b>, it can be said that new cars are more expensive than old ones. However, there some old cars which are also expensive. </li>
+   <li>Based on <b><font color="#ffbf00">year v.s. price graph</font></b>, it can be said that new cars are more expensive than old ones. However, there some old cars which are also expensive. </li>
 </ul>
  
  <img src="image/year.png"> 
  
 <ul>
-   <li>Based on <b>powerPS v.s price graph</b>, low powerPS cars are cheaper than others. </li>
+   <li>Based on <b><font color="#ffbf00">powerPS v.s price graph</font></b>, low powerPS cars are cheaper than others. </li>
 </ul>
 
 <img src="image/power.png"> 
 
 <h1>3.	PROBLEM SETTING</h1>
 <p>The problem is predicting the actual price of the car by looking given parameters.<br>
-There are <b>371528</b> records in dataset. <b>243422</b> of them are remaining after data cleaning process.<br>
+There are <b><font color="#ffbf00">371528</font></b> records in dataset. <b><font color="#ffbf00">243422</font></b> of them are remaining after data cleaning process.<br>
 2 models are implemented. <br>
-One of them uses the <b>33%</b> of the dataset as a test set.<br>
-Other one uses <b>10-fold validation</b> for testing issue
+One of them uses the <b><font color="#ffbf00">33%</font></b> of the dataset as a test set.<br>
+Other one uses <b><font color="#ffbf00">10-fold validation</font></b> for testing issue
 </p>
 
 <h1>4.	MODELLING</h1>
