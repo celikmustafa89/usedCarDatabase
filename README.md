@@ -3,7 +3,7 @@
 <div align="center">
 
 <h1>1.	DATASET</h1>
-<p>
+<p align="left">
 1.	<b>dateCrawled</b> : when this ad was first crawled, all field-values are taken from this date <br>
 2.	<b>name</b> : "name" of the car <br>
 3.	<b>seller</b> : private or dealer <br>
