@@ -1,3 +1,9 @@
+"""
+HISTOGRAM GRAPH PLOT CODE SAMPLE
+HISTOGRAM PLOT FOR THE DATA HAS STRING CONTENT
+FOR THE NUMERIC CONTENT PANDAS LIBRARY HAS BUILT-IN FUNCTIONS
+"""
+
 import matplotlib.pylab as plt
 import pandas as pd
 s1 = pd.Series(['a', 'b', 'a', 'c', 'a', 'b'])
