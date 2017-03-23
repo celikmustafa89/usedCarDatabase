@@ -207,7 +207,6 @@ In order to improve the model:<br>
 - dataset cleaning could be more effienct. According to histogram graph of the attributes, they have lots of inconsistent values.<br>
 - age of the car attribute can improve the model. <font color="#ffbf00">Age attribute</font> could be extracted by using registrationDate and dateCreated attributes.<br>
 - according to attributeselection filter of the WEKA, <font color="#ffbf00">"kilometer"</font> and <font color="#ffbf00">"powerPS"</font> attributes are the most important ones.<br>
-- 
 
 </p>
 <font color="#ffbf00"><h3>Following results are taken from python sklearn model:</h3></font>
