@@ -35,7 +35,7 @@ Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offer
 
 <p>
 <i>Figure 1: Missing Value</i><br>
-According to Figure 1:<br>
+<h3>According to Figure 1:</h3><br>
 </p>
 <ul>
    <li>
@@ -47,7 +47,7 @@ According to Figure 1:<br>
    </li>
 </ul>
 
-<p>According to Table 1 and the Histogram Graph of the columns:</p>
+<h3>According to Table 1 and the Histogram Graph of the columns:</h3>
 <ul>
    <li>dateCrawled (280500), name (233531), lastSeen (182806) columns have too many unique values. Depending on the learning model, these columns can be dropped.</li>
 </ul>
