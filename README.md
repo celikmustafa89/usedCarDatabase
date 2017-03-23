@@ -171,56 +171,43 @@ Dataset consists of <b><font color="#ffbf00">371528 rows</font></b> and <b><font
 <p>The problem is predicting the actual price of the car by looking given parameters.<br>
 There are <b><font color="#ffbf00">371528</font></b> records in dataset. <b><font color="#ffbf00">243422</font></b> of them are remaining after data cleaning process.<br>
 2 models are implemented. <br>
-One of them uses the <b><font color="#ffbf00">33%</font></b> of the dataset as a test set.<br>
-Other one uses <b><font color="#ffbf00">10-fold validation</font></b> for testing issue
+One of them uses the <b><font color="#ffbf00">30%</font></b> of the dataset as a test set.<br>
+Other one uses <b><font color="#ffbf00">33%</font></b> for testing issue
 </p>
 
 <h1><font color="#ffbf00">4.	MODELLING</font></h1>
 <p>Before the implementation of the model. Dataset is cleaned using python libraries, and total number of column is decreased to 10 [<i>'vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model','kilometer', 'fuelType', 'brand', 'notRepairedDamage', 'price'</i>]. 
 </p>
+<h5><font color="#ffbf00">There are 2 different implementation of linear regression model:</font></h5>
+<p> 
+First model is implemented using <font color="#ffbf00">python sklearn library</font>.<br>
+It has <font color="#ffbf00">10</font> attributes.<br>
+<font color="#ffbf00">30 percentage</font> of the dataset is used for testing.<br>
 
+Second model is implemented using <font color="#ffbf00">WEKA</font>.<br>
+<font color="#ffbf00">Attributeselectio</font>n filter of WEKA applied on the dataset.<br>
+Filter removed the <font color="#ffbf00">3</font> attributes. Remaining <font color="#ffbf00">7</font> attributes are used for learning.<br>
+<font color="#ffbf00">33 percentage</font> of the dataset is used for testing.<br>
+</p>
 <p>
 After that, cleaned dataset is preprocessed using WEKA. WEKA attribute evaluator selected some attributes. It suggests the following attributes for the model [<i>'yearOfRegistration', 'gearbox', 'powerPS' ,'kilometer', 'fuelType', 'notRepairedDamage</i>].
 </p>
 
 <h1><font color="#ffbf00">5.	CONCLUSION and IMPROVEMENT POINTS</font></h1>
+<font color="#ffbf00">Following results are taken from WEKA model:</font> <br>
+Correlation coefficient:                  <font color="#ffbf00">0.7864</font><br>
+Mean absolute error:                   <font color="#ffbf00">3103.1781</font><br>
+<font color="#ffbf00">Root mean squared error:</font>               <font color="#ffbf00">4958.1553</font><br>
+Relative absolute error:                 <font color="#ffbf00">56.7852 %</font><br>
+Root relative squared error:             <font color="#ffbf00">61.7716 %</font><br>
+Total Number of Instances:            <font color="#ffbf00">82763</font>   <br>
 
 
+<font color="#ffbf00">Following results are taken from python sklearn model:</font> <br>
+<font color="#ffbf00">RMSE ERROR: 555.6768635632562</font>
+mean_absulute_error: <font color="#ffbf00">397.8973442835626</font>
+mean_squared_error: <font color="#ffbf00">308776.7766994987</font>
 
-<h3>=== Run information ===</h3>
-<p>
-Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
-Relation:     clean_data-weka.filters.unsupervised.attribute.Remove-R1,5,8
-Instances:    243422
-Attributes:   7
-              yearOfRegistration
-              gearbox
-              powerPS
-              kilometer
-              fuelType
-              notRepairedDamage
-              price
-Test mode:    split 66.0% train, remainder test
-</p>
-<h3>=== Classifier model (full training set) ===</h3>
-
-<p>
-Linear Regression Model
-
-price =
-
-    163.5077 * yearOfRegistration +
-    603.5232 * gearbox=automatik +
-     67.2908 * powerPS +
-     -0.0831 * kilometer +
-   2388.1937 * fuelType=diesel +
-   1939.0536 * notRepairedDamage=nein +
--321897.5597
-
-Time taken to build model: 0.27 seconds
-</p>
-<h3>=== Predictions on test split ===</h3>
-<h3>Predictions for dataset clean_data-weka.filters.unsupervised.attribute.Remove-R1,5,8</h3>
 <table border="1">
 <tr>
 <td>inst#</td><td>actual</td><td>predicted</td><td>error</td></tr>
