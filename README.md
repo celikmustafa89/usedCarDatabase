@@ -35,8 +35,7 @@ Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offer
 
 <p>
 <i>Figure 1: Missing Value</i><br>
-<h3>According to Figure 1:</h3><br>
-</p>
+<h3>According to Figure 1:</h3>
 <ul>
    <li>
    5 columns [vehicleType, gearbox, model, fuelType, notRepairedDamage] have missing values. Depending on the model, these columns can be removed completely. However, these columns could be important for the model. So, the records that have null values can be removed. By removing the null values column can be saved for the model. In the table, notRepairedDamage column has 72060 missing value which is the 19% of the whole dataset. In this case, removing each record is not the best option. It seems better to drop whole column.
@@ -59,51 +58,56 @@ Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offer
 <ul>
    <li>Histogram of nrOfPictures column and Table 1 says that this column has only one values and it has no meaning for model and visualization. This column can be dropped.</li>
 </ul>
- 
+
+<img src="image/nrOfPictures.png"> 
+
 <ul>
    <li>Histogram graph of seller column and Table 1 says that this column has 2 unique values and “gewerblich” value has only 3 records. So, this column has no distinguishing information for the model. This column can be dropped, but first the records that has “gewerblich” value should be removed.</li>
 </ul>
+
+ <img src="image/seller.png"> 
  
 <ul>
    <li>Based on histogram graph of offerType, Table 1 and column description, this column has 2 unique values. “gesuch” value has only 12 records. So, this column has no distinguishing information for the model. This column can be dropped, after removing the records that has “gesuch” value. </li>
 </ul>
 
-
-
-
-
-
-
-
-
-
+<img src="image/offerType.png"> 
 
 <ul>
    <li>Based on histogram graph of abtest and Table 1, this column has consistent values for the model. </li>
 </ul>
- 
+
+<img src="image/abtest.png"> 
 
 <ul>
    <li>Based on histogram graph of monthOfRegistration and Table 1, this column should have 12 unique values. However, it has 13 values. Also, dataset has yearOfRegistration column. So, this column can be dropped.</li>
 </ul>
  
+ <img src="image/monthOfRegistration.png"> 
+ 
 <ul>
    <li>postalCode column has 8150 unique values. This information can be used to determine the location of the car. However, for the model, location is not a distinguishing information because all car has postal code in Germany. Car location does not affect the model. This column can be dropped.</li>
 </ul>
  
+<img src="image/postalCode.png"> 
 
 <ul>
    <li>dateCreated column has 114 unique values. This column has no distinguishing information for the model. So, this column can be dropped</li>
 </ul>
  
+ <img src="image/dateCreated.png"> 
+ 
 <ul>
    <li>Based on histogram of price column and its description, this column has 10772 records that has 0 value which means the car is free. Also, records have some value more than 100000 euro. It is not a consistent variable because cars can’t be that much expensive. To make dataset more consistent, prices values which are 0 and larger than 100000 can be removed. The histogram graph of price column are below. First graph shows the original distribution of the prices. Second graph shows the prices without free cars. Third graph shows the prices between 0 and 100000 euro. Other records can be removed from the dataset to have consistent values.  </li>
 </ul>
  
+ <img src="image/price_100.png"> 
 
 <ul>
    <li>Based on histogram of yearsOfRegistration column and its description result, this column has inconsistent values. For example, it has year values larger than 2017. Also, there are some values smaller than 1900 which does not make sense because in that time engine did not invented. So, yersOfRegistration records can be limited between 1900- yearsOfRegistration-2017.</li>
 </ul>
+ 
+ <img src="image/yearsOfRegistration.png"> 
  
 <ul>
    <li>Based on histogram of powerPS and Table 1, this column has some inconsistent values. powerPS can’t be less than 0. Also, powerPS can’t be stronger than 1000. So, it can be limited between 0-powerPS-1000. Other records can be removed from the dataset to have consistent values.</li>
@@ -113,42 +117,55 @@ Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offer
    <li>Based on histogram of fuelType and Table 1, this column has 7 different value type. Apart from “benzin” and “diesel”, other values have very low records. So, these values do not mean much for the model. These records can be removed from the dataset.</li>
 </ul>
  
+ <img src="image/fuelType.png"> 
+ 
 <ul>
    <li>Based on vehicleType histogram and Table 1, it has 8 different values. Values are consistent and can be used for the model.</li>
 </ul>
+ 
+ <img src="image/vehicleType.png"> 
  
 <ul>
    <li>Based on histogram of model and Table 1, this column has many different values. It can be useful for price prediction but to make the model simpler this column can be dropped. </li>
 </ul>
  
-
-
+<img src="image/model.png"> 
 
 <ul>
    <li>Based on histogram of kilometer and table 1, this column has consistent values. Also, it can be useful for the model.</li>
 </ul>
  
+ <img src="image/kilometer.png"> 
+ 
 <ul>
    <li>Based on histogram of gearbox and Table 1, this column has 2 different values and values are consistent.</li>
 </ul>
-                  
+               
+<img src="image/gearbox.png"> 
+               
 <ul>
    <li>Based on histogram of notRepairedDamage, this column has 2 different values. Values are consistent and can be useful for the model.</li>
 </ul>
+ 
+ <img src="image/notRepairedDamage.png"> 
  
 <ul>
    <li>Based on histogram of the brand, this column has 40 different values. It has consistent records and can be useful for the model.</li>
 </ul>
  
+ <img src="image/brand.png"> 
+ 
 <ul>
    <li>Based on year v.s. price graph, it can be said that new cars are more expensive than old ones. However, there some old cars which are also expensive. </li>
 </ul>
+ 
+ <img src="image/year.png"> 
  
 <ul>
    <li>Based on powerPS v.s price graph, low powerPS cars are cheaper than others. </li>
 </ul>
 
-
+<img src="image/power.png"> 
 
 
 <h3>=== Run information ===</h3>
