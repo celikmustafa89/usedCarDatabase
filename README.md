@@ -169,17 +169,20 @@ Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offer
 
 <h1>3.	PROBLEM SETTING</h1>
 <p>The problem is predicting the actual price of the car by looking given parameters.<br>
-There are 371528 records in dataset. 243422 of them are remaining after data cleaning process.<br>
+There are <b>371528</b> records in dataset. <b>243422</b> of them are remaining after data cleaning process.<br>
 </p>
 <h5>There are 2 prediction model for the problem:</h5>
 <ol>
-<li>One of them is implemented using Python. 20% percent of the dataset is used for test purpose.</li>
-<li>Second one is generated using WEKA. It uses 10 fold validation for training.</li>
+<li>One of them is implemented using Python. <b>20% percent</b> of the dataset is used for test purpose.</li>
+<li>Second one is generated using WEKA. It uses <b>10 fold validation</b> for training.</li>
 </ol>
 
 <h1>4.	MODELLING</h1>
-<p>Before the implementation of the model. Dataset is cleaned using python libraries, and total number of column is decreased to 10 ['vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model','kilometer', 'fuelType', 'brand', 'notRepairedDamage', 'price']. 
-After that, cleaned dataset is preprocessed using WEKA. WEKA attribute evaluator selected some attributes. It suggests the following attributes for the model ['yearOfRegistration', 'gearbox', 'powerPS' ,'kilometer', 'fuelType', 'notRepairedDamage'].
+<p>Before the implementation of the model. Dataset is cleaned using python libraries, and total number of column is decreased to 10 [<i>'vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model','kilometer', 'fuelType', 'brand', 'notRepairedDamage', 'price'</i>]. 
+</p>
+
+<p>
+After that, cleaned dataset is preprocessed using WEKA. WEKA attribute evaluator selected some attributes. It suggests the following attributes for the model [<i>'yearOfRegistration', 'gearbox', 'powerPS' ,'kilometer', 'fuelType', 'notRepairedDamage</i>].
 </p>
 
 <h1>5.	CONCLUSION and IMPROVEMENT POINTS</h1>
