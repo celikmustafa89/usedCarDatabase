@@ -230,7 +230,7 @@ mean_squared_error: <font color="#ffbf00">308776.7766994987</font><br>
 <tr><td>8</td><td align="right">3062</td><td align="right">2340.980</td><td align="right">721.019</td></tr>
 <tr><td>9</td><td align="right">2273</td><td align="right">1970.432</td><td align="right">302.567</td></tr>
 <tr><td>10</td><td align="right">897</td><td align="right">1485.134</td><td align="right">588.134</td></tr>
-<tr><td>11</td><td align="right">2006</td><td align="right"2126.953></td><td align="right">120.953</td></tr>
+<tr><td>11</td><td align="right">2006</td><td align="right">2126.953></td><td align="right">120.953</td></tr>
 <tr><td>12</td><td align="right">1225</td><td align="right">1281.999</td><td align="right">56.999</td></tr>
 <tr><td>13</td><td align="right">1149</td><td align="right">695.919</td><td align="right">453.080</td></tr>
 <tr><td>14</td><td align="right">1863</td><td align="right">1228.076</td><td align="right">634.923</td></tr>
