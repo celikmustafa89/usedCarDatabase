@@ -1,6 +1,6 @@
 
 <body>
-<div align="center">
+<div align="left">
 
 <h1>1.	DATASET</h1>
 <p align="left">
