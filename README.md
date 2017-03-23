@@ -2,7 +2,7 @@
 <body>
 <div align="justify">
 
-<h1>1.	DATASET</h1>
+<h1><font color="#ffbf00">1.	DATASET</font></h1>
 <p>
 1.	<b><font color="#ffbf00">dateCrawled</font></b> : <i>when this ad was first crawled, all field-values are taken from this date</i> <br>
 2.	<b><font color="#ffbf00">name</font></b> : <i>"name" of the car </i><br>
@@ -26,7 +26,7 @@
 20.	<b><font color="#ffbf00">lastSeenOnline</font></b> : <i>when the crawler saw this ad last online</i><br>
 </p>
 
-<h1>2.	DATA EXPLORATION</h1>
+<h1><font color="#ffbf00">2.	DATA EXPLORATION</font></h1>
 <p>
 Dataset consists of <b><font color="#ffbf00">371528 rows</font></b> and <b><font color="#ffbf00">20 columns</font></b> [<i>dateCrawled, name, seller, offerType, price, abtest, vehicleType, yearOfRegistration, gearbox, powerPS, model, kilometer, monthOfRegistration, fuelType, brand, notRepairedDamage, dateCreated, nrOfPictures, postalCode, lastSeen</i>]. 
 </p>
@@ -167,7 +167,7 @@ Dataset consists of <b><font color="#ffbf00">371528 rows</font></b> and <b><font
 
 <img src="image/power.png"> 
 
-<h1>3.	PROBLEM SETTING</h1>
+<h1><font color="#ffbf00">3.	PROBLEM SETTING</font></h1>
 <p>The problem is predicting the actual price of the car by looking given parameters.<br>
 There are <b><font color="#ffbf00">371528</font></b> records in dataset. <b><font color="#ffbf00">243422</font></b> of them are remaining after data cleaning process.<br>
 2 models are implemented. <br>
@@ -175,7 +175,7 @@ One of them uses the <b><font color="#ffbf00">33%</font></b> of the dataset as a
 Other one uses <b><font color="#ffbf00">10-fold validation</font></b> for testing issue
 </p>
 
-<h1>4.	MODELLING</h1>
+<h1><font color="#ffbf00">4.	MODELLING</font></h1>
 <p>Before the implementation of the model. Dataset is cleaned using python libraries, and total number of column is decreased to 10 [<i>'vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model','kilometer', 'fuelType', 'brand', 'notRepairedDamage', 'price'</i>]. 
 </p>
 
@@ -183,7 +183,7 @@ Other one uses <b><font color="#ffbf00">10-fold validation</font></b> for testin
 After that, cleaned dataset is preprocessed using WEKA. WEKA attribute evaluator selected some attributes. It suggests the following attributes for the model [<i>'yearOfRegistration', 'gearbox', 'powerPS' ,'kilometer', 'fuelType', 'notRepairedDamage</i>].
 </p>
 
-<h1>5.	CONCLUSION and IMPROVEMENT POINTS</h1>
+<h1><font color="#ffbf00">5.	CONCLUSION and IMPROVEMENT POINTS</font></h1>
 
 
 
