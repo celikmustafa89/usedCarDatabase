@@ -213,6 +213,41 @@ Total Number of Instances:            <font color="#ffbf00">82763</font>   <br><
 mean_absulute_error: <font color="#ffbf00">397.8973442835626</font><br>
 mean_squared_error: <font color="#ffbf00">308776.7766994987</font><br>
 
+<font color="#ffbf00"><h1>PYTHON SKLEARN LINEAR REGRESSION MODEL RESULT</h1></font>
+<p>Root mean squared error:               555.6768635632562<br></p>
+
+<table border="2">
+<tr>
+<td>inst#</td><td>actual</td><td>predicted</td><td>error</td></tr>
+1006.7755851830977, -164.4638266290492, 1106.2628902594086, 2702.6533430666104, 1628.073547623884, 719.7890275189777, 743.0514964898236, 1436.2217463931458, 1869.7169522833321, 516.3041924620777, 
+
+, , , , , , , , , , , , , , , 
+
+7744881732, 386280502, 1943901225, 8492953264, 4868046426, 1071107795, 3557748971, 8334634921, 6120881058, 800012049, 6844109562, 7566441245, 8681037227, 6695777958, 519328118, 
+
+77448817324, 3862805020435, 8056098775, 1507046736, 4868046426, 10711077946, 35577489714, 16653650793, 3879118942, 19998795095, 31558904377, 7566441245, 13189627727, 33042220421, 4806718819, 
+
+<tr><td>1</td><td align="right">400</td><td align="right">419.435</td><td align="right">19.435</td></tr>
+<tr><td>2</td><td align="right">400</td><td align="right">602.408</td><td align="right">202.408</td></tr>
+<tr><td>3</td><td align="right">624</td><td align="right">955.720</td><td align="right">331.720</td></tr>
+<tr><td>4</td><td align="right">2579</td><td align="right">1690.700</td><td align="right">888.299</td></tr>
+<tr><td>5</td><td align="right">2166</td><td align="right">1737.427</td><td align="right">428.572</td></tr>
+<tr><td>6</td><td align="right">1697</td><td align="right">2051.277</td><td align="right">354.277</td></tr>
+<tr><td>7</td><td align="right">835</td><td align="right">839.545</td><td align="right">4.545</td></tr>
+<tr><td>8</td><td align="right">3062</td><td align="right">2340.980</td><td align="right">721.019</td></tr>
+<tr><td>9</td><td align="right">2273</td><td align="right">1970.432</td><td align="right">302.567</td></tr>
+<tr><td>10</td><td align="right">897</td><td align="right">1485.134</td><td align="right">588.134</td></tr>
+<tr><td>11</td><td align="right">2006</td><td align="right"2126.953></td><td align="right">120.953</td></tr>
+<tr><td>12</td><td align="right">1225</td><td align="right">1281.999</td><td align="right">56.999</td></tr>
+<tr><td>13</td><td align="right">1149</td><td align="right">695.919</td><td align="right">453.080</td></tr>
+<tr><td>14</td><td align="right">1863</td><td align="right">1228.076</td><td align="right">634.923</td></tr>
+<tr><td>15</td><td align="right">3352</td><td align="right">2866.412</td><td align="right">485.587</td></tr>
+<tr><td>16</td><td align="right">2056</td><td align="right">1947.652</td><td align="right">108.347</td></tr>
+<tr><td>17</td><td align="right">0</td><td align="right">664.973</td><td align="right">664.973</td></tr>
+<tr><td>18</td><td align="right">1975</td><td align="right">1852.990</td><td align="right">122.009</td></tr>
+<tr><td>19</td><td align="right">932</td><td align="right">868.003</td><td align="right">63.996</td></tr>
+<tr><td>20</td><td align="right">3435</td><td align="right">2710.145</td><td align="right">724.854</td></tr>
+</table>
 <font color="#ffbf00"><h1>WEKA MODEL RESULT</h1></font>
 <p>Root mean squared error:               4958.1553<br></p>
 
@@ -239,186 +274,7 @@ mean_squared_error: <font color="#ffbf00">308776.7766994987</font><br>
 <tr><td>18</td><td align="right">6000</td><td align="right">7567.218</td><td align="right">1567.218</td></tr>
 <tr><td>19</td><td align="right">2800</td><td align="right">4278.547</td><td align="right">1478.547</td></tr>
 <tr><td>20</td><td align="right">399</td><td align="right">1198.466</td><td align="right">799.466</td></tr>
-<tr><td>21</td><td align="right">600</td><td align="right">-683.092</td><td align="right">-1283.092</td></tr>
-<tr><td>22</td><td align="right">11200</td><td align="right">13948.794</td><td align="right">2748.794</td></tr>
-<tr><td>23</td><td align="right">2490</td><td align="right">4802.349</td><td align="right">2312.349</td></tr>
-<tr><td>24</td><td align="right">1699</td><td align="right">1226.653</td><td align="right">-472.347</td></tr>
-<tr><td>25</td><td align="right">2400</td><td align="right">1651.665</td><td align="right">-748.335</td></tr>
-<tr><td>26</td><td align="right">3350</td><td align="right">1533.574</td><td align="right">-1816.426</td></tr>
-<tr><td>27</td><td align="right">6900</td><td align="right">2789.065</td><td align="right">-4110.935</td></tr>
-<tr><td>28</td><td align="right">1800</td><td align="right">-521.508</td><td align="right">-2321.508</td></tr>
-<tr><td>29</td><td align="right">999</td><td align="right">-1024.797</td><td align="right">-2023.797</td></tr>
-<tr><td>30</td><td align="right">2200</td><td align="right">2679.834</td><td align="right">479.834</td></tr>
-<tr><td>31</td><td align="right">2000</td><td align="right">9352.781</td><td align="right">7352.781</td></tr>
-<tr><td>32</td><td align="right">4000</td><td align="right">4870.663</td><td align="right">870.663</td></tr>
-<tr><td>33</td><td align="right">450</td><td align="right">-1548.599</td><td align="right">-1998.599</td></tr>
-<tr><td>34</td><td align="right">39900</td><td align="right">27378.464</td><td align="right">-12521.536</td></tr>
-<tr><td>35</td><td align="right">11400</td><td align="right">7158.677</td><td align="right">-4241.323</td></tr>
-<tr><td>36</td><td align="right">490</td><td align="right">2607.076</td><td align="right">2117.076</td></tr>
-<tr><td>37</td><td align="right">2500</td><td align="right">4521.265</td><td align="right">2021.265</td></tr>
-<tr><td>38</td><td align="right">800</td><td align="right">1934.706</td><td align="right">1134.706</td></tr>
-<tr><td>39</td><td align="right">10500</td><td align="right">5678.584</td><td align="right">-4821.416</td></tr>
-<tr><td>40</td><td align="right">2000</td><td align="right">4735.112</td><td align="right">2735.112</td></tr>
-<tr><td>41</td><td align="right">7300</td><td align="right">6645.934</td><td align="right">-654.066</td></tr>
-<tr><td>42</td><td align="right">25500</td><td align="right">16712.904</td><td align="right">-8787.096</td></tr>
-<tr><td>43</td><td align="right">5800</td><td align="right">10302.763</td><td align="right">4502.763</td></tr>
-<tr><td>44</td><td align="right">4378</td><td align="right">5065.356</td><td align="right">687.356</td></tr>
-<tr><td>45</td><td align="right">23500</td><td align="right">12138.451</td><td align="right">-11361.549</td></tr>
-<tr><td>46</td><td align="right">4500</td><td align="right">1317.769</td><td align="right">-3182.231</td></tr>
-<tr><td>47</td><td align="right">13900</td><td align="right">15045.157</td><td align="right">1145.157</td></tr>
-<tr><td>48</td><td align="right">19900</td><td align="right">23986.561</td><td align="right">4086.561</td></tr>
-<tr><td>49</td><td align="right">1290</td><td align="right">4165.662</td><td align="right">2875.662</td></tr>
-<tr><td>50</td><td align="right">1400</td><td align="right">5150.051</td><td align="right">3750.051</td></tr>
-<tr><td>51</td><td align="right">6299</td><td align="right">7385.541</td><td align="right">1086.541</td></tr>
-<tr><td>52</td><td align="right">5800</td><td align="right">9640.887</td><td align="right">3840.887</td></tr>
-<tr><td>53</td><td align="right">2350</td><td align="right">8285.654</td><td align="right">5935.654</td></tr>
-<tr><td>54</td><td align="right">6400</td><td align="right">11960.662</td><td align="right">5560.662</td></tr>
-<tr><td>55</td><td align="right">7115</td><td align="right">9798.174</td><td align="right">2683.174</td></tr>
-<tr><td>56</td><td align="right">650</td><td align="right">-844.676</td><td align="right">-1494.676</td></tr>
-<tr><td>57</td><td align="right">2450</td><td align="right">3249.958</td><td align="right">799.958</td></tr>
-<tr><td>58</td><td align="right">5599</td><td align="right">6924.336</td><td align="right">1325.336</td></tr>
-<tr><td>59</td><td align="right">7950</td><td align="right">5193.831</td><td align="right">-2756.169</td></tr>
-<tr><td>60</td><td align="right">950</td><td align="right">1589.949</td><td align="right">639.949</td></tr>
-<tr><td>61</td><td align="right">200</td><td align="right">10427.248</td><td align="right">10227.248</td></tr>
-<tr><td>62</td><td align="right">3300</td><td align="right">4278.547</td><td align="right">978.547</td></tr>
-<tr><td>63</td><td align="right">4990</td><td align="right">286.413</td><td align="right">-4703.587</td></tr>
-<tr><td>64</td><td align="right">550</td><td align="right">-1207.296</td><td align="right">-1757.296</td></tr>
-<tr><td>65</td><td align="right">3300</td><td align="right">6552.467</td><td align="right">3252.467</td></tr>
-<tr><td>66</td><td align="right">2500</td><td align="right">1549.822</td><td align="right">-950.178</td></tr>
-<tr><td>67</td><td align="right">900</td><td align="right">875.494</td><td align="right">-24.506</td></tr>
-<tr><td>68</td><td align="right">8700</td><td align="right">14375.406</td><td align="right">5675.406</td></tr>
-<tr><td>69</td><td align="right">10800</td><td align="right">10104.972</td><td align="right">-695.028</td></tr>
-<tr><td>70</td><td align="right">11500</td><td align="right">11804.133</td><td align="right">304.133</td></tr>
-<tr><td>71</td><td align="right">625</td><td align="right">-1368.478</td><td align="right">-1993.478</td></tr>
-<tr><td>72</td><td align="right">200</td><td align="right">1328.497</td><td align="right">1128.497</td></tr>
-<tr><td>73</td><td align="right">3600</td><td align="right">7095.08</td><td align="right">3495.08</td></tr>
-<tr><td>74</td><td align="right">780</td><td align="right">2648.867</td><td align="right">1868.867</td></tr>
-<tr><td>75</td><td align="right">10900</td><td align="right">7708.709</td><td align="right">-3191.291</td></tr>
-<tr><td>76</td><td align="right">690</td><td align="right">2650.699</td><td align="right">1960.699</td></tr>
-<tr><td>77</td><td align="right">10700</td><td align="right">12285.941</td><td align="right">1585.941</td></tr>
-<tr><td>78</td><td align="right">1999</td><td align="right">6793.425</td><td align="right">4794.425</td></tr>
-<tr><td>79</td><td align="right">2000</td><td align="right">124.829</td><td align="right">-1875.171</td></tr>
-<tr><td>80</td><td align="right">22700</td><td align="right">20377.384</td><td align="right">-2322.616</td></tr>
-<tr><td>81</td><td align="right">17200</td><td align="right">19003.737</td><td align="right">1803.737</td></tr>
-<tr><td>82</td><td align="right">1450</td><td align="right">882.571</td><td align="right">-567.429</td></tr>
-<tr><td>83</td><td align="right">4950</td><td align="right">4346.861</td><td align="right">-603.139</td></tr>
-<tr><td>84</td><td align="right">3750</td><td align="right">9377.407</td><td align="right">5627.407</td></tr>
-<tr><td>85</td><td align="right">4300</td><td align="right">8057.91</td><td align="right">3757.91</td></tr>
-<tr><td>86</td><td align="right">1850</td><td align="right">6648.682</td><td align="right">4798.682</td></tr>
-<tr><td>87</td><td align="right">2550</td><td align="right">609.582</td><td align="right">-1940.418</td></tr>
-<tr><td>88</td><td align="right">4200</td><td align="right">7425.601</td><td align="right">3225.601</td></tr>
-<tr><td>89</td><td align="right">2200</td><td align="right">7506.801</td><td align="right">5306.801</td></tr>
-<tr><td>90</td><td align="right">1690</td><td align="right">-36.755</td><td align="right">-1726.755</td></tr>
-<tr><td>91</td><td align="right">2300</td><td align="right">1125.486</td><td align="right">-1174.514</td></tr>
-<tr><td>92</td><td align="right">11000</td><td align="right">8057.91</td><td align="right">-2942.09</td></tr>
-<tr><td>93</td><td align="right">11800</td><td align="right">11588.962</td><td align="right">-211.038</td></tr>
-<tr><td>94</td><td align="right">3200</td><td align="right">3376.279</td><td align="right">176.279</td></tr>
-<tr><td>95</td><td align="right">23800</td><td align="right">19147.564</td><td align="right">-4652.436</td></tr>
-<tr><td>96</td><td align="right">3100</td><td align="right">5490.77</td><td align="right">2390.77</td></tr>
-<tr><td>97</td><td align="right">3800</td><td align="right">1283.028</td><td align="right">-2516.972</td></tr>
-<tr><td>98</td><td align="right">1000</td><td align="right">1729.541</td><td align="right">729.541</td></tr>
-<tr><td>99</td><td align="right">1799</td><td align="right">4535.358</td><td align="right">2736.358</td></tr>
-<tr><td>100</td><td align="right">7890</td><td align="right">13844.964</td><td align="right">5954.964</td></tr>
-<tr><td>101</td><td align="right">4499</td><td align="right">5469.855</td><td align="right">970.855</td></tr>
-<tr><td>102</td><td align="right">4999</td><td align="right">8628.578</td><td align="right">3629.578</td></tr>
-<tr><td>103</td><td align="right">7390</td><td align="right">11073.305</td><td align="right">3683.305</td></tr>
-<tr><td>104</td><td align="right">799</td><td align="right">-22.949</td><td align="right">-821.949</td></tr>
-<tr><td>105</td><td align="right">9600</td><td align="right">10019.097</td><td align="right">419.097</td></tr>
-<tr><td>106</td><td align="right">23950</td><td align="right">17710.274</td><td align="right">-6239.726</td></tr>
-<tr><td>107</td><td align="right">15800</td><td align="right">10282.926</td><td align="right">-5517.074</td></tr>
-<tr><td>108</td><td align="right">17990</td><td align="right">14205.547</td><td align="right">-3784.453</td></tr>
-<tr><td>109</td><td align="right">3550</td><td align="right">7681.402</td><td align="right">4131.402</td></tr>
-<tr><td>110</td><td align="right">12900</td><td align="right">10993.248</td><td align="right">-1906.752</td></tr>
-<tr><td>111</td><td align="right">1500</td><td align="right">5448.685</td><td align="right">3948.685</td></tr>
-<tr><td>112</td><td align="right">4250</td><td align="right">7223.957</td><td align="right">2973.957</td></tr>
-<tr><td>113</td><td align="right">2300</td><td align="right">461.014</td><td align="right">-1838.986</td></tr>
-<tr><td>114</td><td align="right">3300</td><td align="right">1251.806</td><td align="right">-2048.194</td></tr>
-<tr><td>115</td><td align="right">1650</td><td align="right">1226.653</td><td align="right">-423.347</td></tr>
-<tr><td>116</td><td align="right">4400</td><td align="right">4788.511</td><td align="right">388.511</td></tr>
-<tr><td>117</td><td align="right">5450</td><td align="right">8466.007</td><td align="right">3016.007</td></tr>
-<tr><td>118</td><td align="right">2500</td><td align="right">4124.039</td><td align="right">1624.039</td></tr>
-<tr><td>119</td><td align="right">4500</td><td align="right">3861.031</td><td align="right">-638.969</td></tr>
-<tr><td>120</td><td align="right">2900</td><td align="right">7958.885</td><td align="right">5058.885</td></tr>
-<tr><td>121</td><td align="right">1550</td><td align="right">4334.568</td><td align="right">2784.568</td></tr>
-<tr><td>122</td><td align="right">5000</td><td align="right">10763.35</td><td align="right">5763.35</td></tr>
-<tr><td>123</td><td align="right">7800</td><td align="right">7931.02</td><td align="right">131.02</td></tr>
-<tr><td>124</td><td align="right">3600</td><td align="right">11085.441</td><td align="right">7485.441</td></tr>
-<tr><td>125</td><td align="right">3000</td><td align="right">2087.718</td><td align="right">-912.282</td></tr>
-<tr><td>126</td><td align="right">3450</td><td align="right">6339.607</td><td align="right">2889.607</td></tr>
-<tr><td>127</td><td align="right">3999</td><td align="right">8967.44</td><td align="right">4968.44</td></tr>
-<tr><td>128</td><td align="right">7900</td><td align="right">13566.664</td><td align="right">5666.664</td></tr>
-<tr><td>129</td><td align="right">19000</td><td align="right">16269.355</td><td align="right">-2730.645</td></tr>
-<tr><td>130</td><td align="right">5800</td><td align="right">8088.846</td><td align="right">2288.846</td></tr>
-<tr><td>131</td><td align="right">1990</td><td align="right">4359.681</td><td align="right">2369.681</td></tr>
-<tr><td>132</td><td align="right">3490</td><td align="right">8917.897</td><td align="right">5427.897</td></tr>
-<tr><td>133</td><td align="right">2800</td><td align="right">-479.226</td><td align="right">-3279.226</td></tr>
-<tr><td>134</td><td align="right">7150</td><td align="right">11234.889</td><td align="right">4084.889</td></tr>
-<tr><td>135</td><td align="right">16950</td><td align="right">9873.309</td><td align="right">-7076.691</td></tr>
-<tr><td>136</td><td align="right">790</td><td align="right">-359.923</td><td align="right">-1149.923</td></tr>
-<tr><td>137</td><td align="right">450</td><td align="right">1159.416</td><td align="right">709.416</td></tr>
-<tr><td>138</td><td align="right">2650</td><td align="right">932.75</td><td align="right">-1717.25</td></tr>
-<tr><td>139</td><td align="right">10999</td><td align="right">10323.053</td><td align="right">-675.947</td></tr>
-<tr><td>140</td><td align="right">8780</td><td align="right">13555.546</td><td align="right">4775.546</td></tr>
-<tr><td>141</td><td align="right">6500</td><td align="right">7845.05</td><td align="right">1345.05</td></tr>
-<tr><td>142</td><td align="right">9500</td><td align="right">145.476</td><td align="right">-9354.524</td></tr>
-<tr><td>143</td><td align="right">20900</td><td align="right">20002.939</td><td align="right">-897.061</td></tr>
-<tr><td>144</td><td align="right">2500</td><td align="right">2712.063</td><td align="right">212.063</td></tr>
-<tr><td>145</td><td align="right">2990</td><td align="right">6941.992</td><td align="right">3951.992</td></tr>
-<tr><td>146</td><td align="right">4900</td><td align="right">7532.21</td><td align="right">2632.21</td></tr>
-<tr><td>147</td><td align="right">11500</td><td align="right">8064.987</td><td align="right">-3435.013</td></tr>
-<tr><td>148</td><td align="right">7850</td><td align="right">10196.477</td><td align="right">2346.477</td></tr>
-<tr><td>149</td><td align="right">31000</td><td align="right">23201.371</td><td align="right">-7798.629</td></tr>
-<tr><td>150</td><td align="right">3650</td><td align="right">4696.943</td><td align="right">1046.943</td></tr>
-<tr><td>151</td><td align="right">790</td><td align="right">580.317</td><td align="right">-209.683</td></tr>
-<tr><td>152</td><td align="right">10000</td><td align="right">13251.118</td><td align="right">3251.118</td></tr>
-<tr><td>153</td><td align="right">4200</td><td align="right">7411.574</td><td align="right">3211.574</td></tr>
-<tr><td>154</td><td align="right">1200</td><td align="right">2194.004</td><td align="right">994.004</td></tr>
-<tr><td>155</td><td align="right">700</td><td align="right">-109.513</td><td align="right">-809.513</td></tr>
-<tr><td>156</td><td align="right">1150</td><td align="right">1912.04</td><td align="right">762.04</td></tr>
-<tr><td>157</td><td align="right">650</td><td align="right">-2861.785</td><td align="right">-3511.785</td></tr>
-<tr><td>158</td><td align="right">16890</td><td align="right">15993.048</td><td align="right">-896.952</td></tr>
-<tr><td>159</td><td align="right">5600</td><td align="right">8006.634</td><td align="right">2406.634</td></tr>
-<tr><td>160</td><td align="right">22500</td><td align="right">19380.014</td><td align="right">-3119.986</td></tr>
-<tr><td>161</td><td align="right">8499</td><td align="right">9377.407</td><td align="right">878.407</td></tr>
-<tr><td>162</td><td align="right">2999</td><td align="right">4696.943</td><td align="right">1697.943</td></tr>
-<tr><td>163</td><td align="right">3300</td><td align="right">5947.13</td><td align="right">2647.13</td></tr>
-<tr><td>164</td><td align="right">1700</td><td align="right">1114.846</td><td align="right">-585.154</td></tr>
-<tr><td>165</td><td align="right">5999</td><td align="right">7768.048</td><td align="right">1769.048</td></tr>
-<tr><td>166</td><td align="right">900</td><td align="right">-2960.576</td><td align="right">-3860.576</td></tr>
-<tr><td>167</td><td align="right">8000</td><td align="right">11176.022</td><td align="right">3176.022</td></tr>
-<tr><td>168</td><td align="right">3200</td><td align="right">4844.433</td><td align="right">1644.433</td></tr>
-<tr><td>169</td><td align="right">4050</td><td align="right">6295.656</td><td align="right">2245.656</td></tr>
-<tr><td>170</td><td align="right">990</td><td align="right">1065.069</td><td align="right">75.069</td></tr>
-<tr><td>171</td><td align="right">3200</td><td align="right">8368.852</td><td align="right">5168.852</td></tr>
-<tr><td>172</td><td align="right">7900</td><td align="right">9959.758</td><td align="right">2059.758</td></tr>
-<tr><td>173</td><td align="right">6000</td><td align="right">6680.54</td><td align="right">680.54</td></tr>
-<tr><td>174</td><td align="right">1450</td><td align="right">-216.876</td><td align="right">-1666.876</td></tr>
-<tr><td>175</td><td align="right">1500</td><td align="right">2396.792</td><td align="right">896.792</td></tr>
-<tr><td>176</td><td align="right">3400</td><td align="right">4802.349</td><td align="right">1402.349</td></tr>
-<tr><td>177</td><td align="right">1500</td><td align="right">306.926</td><td align="right">-1193.074</td></tr>
-<tr><td>178</td><td align="right">7000</td><td align="right">7748.836</td><td align="right">748.836</td></tr>
-<tr><td>179</td><td align="right">1150</td><td align="right">1065.069</td><td align="right">-84.931</td></tr>
-<tr><td>180</td><td align="right">700</td><td align="right">6104.385</td><td align="right">5404.385</td></tr>
-<tr><td>181</td><td align="right">1150</td><td align="right">4521.265</td><td align="right">3371.265</td></tr>
-<tr><td>182</td><td align="right">1050</td><td align="right">-61.998</td><td align="right">-1111.998</td></tr>
-<tr><td>183</td><td align="right">4300</td><td align="right">648.631</td><td align="right">-3651.369</td></tr>
-<tr><td>184</td><td align="right">6300</td><td align="right">5455.762</td><td align="right">-844.238</td></tr>
-<tr><td>185</td><td align="right">7950</td><td align="right">12943.903</td><td align="right">4993.903</td></tr>
-<tr><td>186</td><td align="right">7990</td><td align="right">9838.3</td><td align="right">1848.3</td></tr>
-<tr><td>187</td><td align="right">1199</td><td align="right">-1099.53</td><td align="right">-2298.53</td></tr>
-<tr><td>188</td><td align="right">920</td><td align="right">784.972</td><td align="right">-135.028</td></tr>
-<tr><td>189</td><td align="right">17299</td><td align="right">15905.588</td><td align="right">-1393.412</td></tr>
-<tr><td>190</td><td align="right">11250</td><td align="right">14653.392</td><td align="right">3403.392</td></tr>
-<tr><td>191</td><td align="right">4800</td><td align="right">5222.612</td><td align="right">422.612</td></tr>
-<tr><td>192</td><td align="right">8250</td><td align="right">10599.962</td><td align="right">2349.962</td></tr>
-<tr><td>193</td><td align="right">11200</td><td align="right">7320.262</td><td align="right">-3879.738</td></tr>
-<tr><td>194</td><td align="right">2000</td><td align="right">5022.863</td><td align="right">3022.863</td></tr>
-<tr><td>195</td><td align="right">6200</td><td align="right">8517.42</td><td align="right">2317.42</td></tr>
-<tr><td>196</td><td align="right">860</td><td align="right">1939.15</td><td align="right">1079.15</td></tr>
-<tr><td>197</td><td align="right">2350</td><td align="right">2316.539</td><td align="right">-33.461</td></tr>
-<tr><td>198</td><td align="right">7150</td><td align="right">25622.999</td><td align="right">18472.999</td></tr>
-<tr><td>199</td><td align="right">8600</td><td align="right">12927.949</td><td align="right">4327.949</td></tr>
-<tr><td>200</td><td align="right">11900</td><td align="right">18886.887</td><td align="right">6986.887</td></tr>
 </table>
+
 </div>
 </body>
