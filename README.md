@@ -31,7 +31,7 @@
 Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offerType, price, abtest, vehicleType, yearOfRegistration, gearbox, powerPS, model, kilometer, monthOfRegistration, fuelType, brand, notRepairedDamage, dateCreated, nrOfPictures, postalCode, lastSeen]. 
 </p>
 
-<br> 
+<img src="image/missing_value.png" alt="Table 1"><br> 
 
 <p align="left">
 Figure 1: Missing Value<br>
