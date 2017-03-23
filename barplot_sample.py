@@ -1,6 +1,8 @@
-import matplotlib.pyplot as plt
-import pandas as pd
+"""
+BAR GRAPH PLOTTING CODE SAMPLE
+"""
 
+import matplotlib.pyplot as plt
 
 
 colLabels=("Structure", "Energy", "Density")

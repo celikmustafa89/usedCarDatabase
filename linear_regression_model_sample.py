@@ -64,7 +64,7 @@ model_sklearn = linear_model.LinearRegression()
 
 
 #fit the model
-model_sklearn.fit(cleaned_encoded_data.iloc[:, 1:4], cleaned_encoded_data.iloc[:, 9])
+model_sklearn.fit(cleaned_encoded_data.iloc[:, :9], cleaned_encoded_data.iloc[:, 9])
 # LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
 
 #Regression coefficients
@@ -79,7 +79,7 @@ print("model_intercept: {}".format(model_sklearn.intercept_))
 from sklearn.model_selection import train_test_split
 
 #Split into train and validation
-x_train, x_test, y_train, y_test = train_test_split(cleaned_encoded_data.iloc[:, 1:4],
+x_train, x_test, y_train, y_test = train_test_split(cleaned_encoded_data.iloc[:, :9],
                                                     cleaned_encoded_data.iloc[:, 9],
                                                     test_size=0.2)
 
@@ -122,8 +122,8 @@ print("mean_absulute_error: {}".format(mean_absolute_error(y_test, y_pred)))
 print("mean_squared_error: {}".format(mean_squared_error(y_test, y_pred)))
 
 
-plt.scatter(x_test['yearOfRegistration'], y_test,  color='green')
-plt.plot(x_test['yearOfRegistration'], model_sklearn_tv.predict(x_test), color='black', linewidth=0.5)
+plt.scatter(x_test['brand'], y_test,  color='black')
+plt.plot(x_test['brand'], model_sklearn_tv.predict(x_test), color='blue', linewidth=3)
 
 
 # ax = sns.regplot(x=y_test, y=y_pred, ci=68)

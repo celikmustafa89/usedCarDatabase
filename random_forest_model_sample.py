@@ -1,4 +1,6 @@
-from sklearn.linear_model import Ridge, RidgeCV, ElasticNet, Lasso, LassoCV, LassoLarsCV
+"""
+RANDOM FOREST IMPLEMENTATION CODE SAMPLE
+"""
 from sklearn.model_selection import cross_val_score, train_test_split
 import pandas as pd
 import numpy as np

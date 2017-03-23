@@ -1,32 +1,50 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pylab as plt
-from openpyxl.writer.excel import ExcelWriter
-from pandas.tools.plotting import table
-import toyplot.data
-import plotly.plotly as py
-from plotly.tools import FigureFactory as ff  # if not works use "import plotly.figure_factory as ff"
+from sklearn import preprocessing
+from sklearn import linear_model
+import numpy as np
 
 
 def main():
-
     cars = pd.read_csv('input/autos.csv', encoding='latin_1')
 
     print(">>> input length: {}".format(cars.shape[0]))  # prints the length of data
     print(">>> column length: {}".format(cars.shape[1]))  # prints the length of column
 
     # shows empty records and draw graph
-    # show_empty_records(cars)
+    # ### show_empty_records(cars)
 
     # draw the rows that have null values
-    cars_without_null_values = cars.dropna()
-    print(">>> {} rows over {} is deleted that has null value at least one column on it\n"
-          .format(cars.shape[0]-cars_without_null_values.shape[0], cars.shape[0]))
+    # ### cars_without_null_values = cars.dropna()
+    # ### print(">>> {} rows over {} is deleted that has null value at least one column on it\n"
+    # ###       .format(cars.shape[0]-cars_without_null_values.shape[0], cars.shape[0]))
 
-    # describe_data_frame(cars)  # creates table for the
+    # ### describe_data_frame(cars)  # creates table for the
+
+    # plots the histogram graph of the columns
+    # ### histogram_visualization_of_the_data_frame(cars)
 
     clean_data = data_cleaning_for_regression(cars)
+
+    # export clean data to csv format for WEKA
+    data_frame_to_csv(clean_data, "output/clean_data.csv")
+
+    # runs the linear regressionmodel for clean data
+    regression_model(clean_data)
+
     plt.show()
+
+    # plots the scatter graph of two columns
+    # ### draw_scatter_visualization_of_two_column(clean_data, 'yearOfRegistration', 'price')
+    # ### draw_scatter_visualization_of_two_column(clean_data, 'powerPS', 'price')
+    # ### draw_scatter_visualization_of_two_column(clean_data, 'brand', 'price')
+    # ### draw_scatter_visualization_of_two_column(clean_data, 'kilometer', 'price')
+    # ### draw_scatter_visualization_of_two_column(clean_data, 'gearbox', 'price')
+    # ### draw_scatter_visualization_of_two_column(clean_data, 'vehicleType', 'price')
+    # ### draw_scatter_visualization_of_two_column(clean_data, 'fuelType', 'price')
+    # ### draw_scatter_visualization_of_two_column(clean_data, 'notRepairedDamage', 'price')
+
     # Shows the first five records
     # print(">>> first five records:\n{}".format(cars.head()))
 
@@ -63,9 +81,14 @@ def data_cleaning_for_regression(cars):
         brand: FINE
         notRepairedDamage: FINE
 
+    :param cars: pandas's dataframe
+    :return: pandas's dataframe object
+
     """
 
+    # ###############################################################################
     # #################### COLUMNS THAT ARE COMPLETELY DELETED #################### #
+    # ###############################################################################
 
     # dateCrawled does not effect model. Removes the dateCrawled column
     clean_data = cars.drop('dateCrawled', 1)
@@ -118,7 +141,9 @@ def data_cleaning_for_regression(cars):
     # ### draw_column_histogram_string(clean_data, 'lastSeen') # too many data for histogram
     clean_data = clean_data.drop('lastSeen', 1)  # removes the lastSeen column
 
+    # ##############################################################################
     # #################### COLUMNS THAT ARE PARTIALLY DELETED #################### #
+    # ##############################################################################
 
     # for removing the overestimated price. limits the max price 100.000
     clean_data = clean_data[clean_data.price < 100000]
@@ -144,7 +169,9 @@ def data_cleaning_for_regression(cars):
     clean_data = clean_data[clean_data.fuelType != 'elektro']  # removes the  rows
     # ### draw_column_histogram_string(clean_data, 'fuelType')
 
+    # ###############################################################################
     # #################### COLUMNS THAT HAVE CONSISTENT VALUES #################### #
+    # ###############################################################################
 
     # vehicleType looks fine.
     # ### draw_column_histogram_string(clean_data, 'vehicleType')
@@ -166,57 +193,143 @@ def data_cleaning_for_regression(cars):
 
     clean_data = clean_data.dropna()  # removes the rows that has missing values
 
-    #print(clean_data.head)
-    print("cars: {}\nclean_Data: {}".format(cars.shape, clean_data.shape))
+    # print(clean_data.head)
+    # ### print("cars: {}\nclean_Data: {}".format(cars.shape, clean_data.shape))
 
-    """
-    # Create a Pandas Excel writer using XlsxWriter as the engine.
-    writer = pd.ExcelWriter('output/clean_data.xlsx', engine='xlsxwriter')
-    # Convert the dataframe to an XlsxWriter Excel object.
-    clean_data.to_excel(writer, sheet_name='clean_data')
-
-    # Close the Pandas Excel writer and output the Excel file.
-    writer.save()
-    """
+    # reorders the column places
+    clean_data = clean_data[['vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model',
+                             'kilometer', 'fuelType', 'brand', 'notRepairedDamage', 'price']]
 
     return clean_data
 
-def regression_model():
-    pass
 
+# ############################################################################# #
+# ######################### DATAFRAME EXPORTING METHOD ######################## #
+
+
+def data_frame_to_excel(data_frame, file_name):
+    """Converts pandas's dataframe object to excel format.
+
+    :param data_frame: pandas.dataframe
+    :param file_name: string
+    :return: None
+    """
+    # Create a Pandas Excel writer using XlsxWriter as the engine.
+    writer = pd.ExcelWriter(file_name, engine='xlsxwriter')
+    # Convert the dataframe to an XlsxWriter Excel object.
+    data_frame.to_excel(writer, sheet_name='sheet1')
+
+    # Close the Pandas Excel writer and output the Excel file.
+    writer.save()
+
+
+def data_frame_to_csv(data_frame, file_name):
+    """Converts pandas's dataframe object to csv format.
+
+    :param data_frame: pandas.dataframe
+    :param file_name: string
+    :return: None
+    """
+    # sample_data = data_frame.sample(n=100, random_state=1)
+    # sample_data.to_csv(file_name, sep=',', index=False)
+    data_frame.to_csv(file_name, sep=',', index=False)
+
+
+# ############################################################################# #
+# ######################## DATA VISUALIZATION METHODS ######################### #
+
+
+def histogram_visualization_of_the_data_frame(cars):
+    """Plot the histogram graph of each column in the dataframe.
+
+    :param cars: pandas.dataframe
+    :return: None
+    """
+    for column in cars:
+        if column == "dateCrawled" or column == "name" or column == "lastSeen":
+            continue
+        elif column == "price" or column == "postalCode" or column == "powerPS":
+            draw_column_histogram(cars, column)
+        else:
+            draw_column_histogram_string(cars, column)
+
+
+def draw_column_histogram(data_frame, column_name):
+    """Plots the histogram graph of the given column which has number value.
+
+    :param data_frame: pandas.dataframe
+    :param column_name: string
+    :return: None
+    """
+    # ### print(data_frame[column_name].describe())
+
+    # sample_data = data_frame.sample(n=10000, random_state=1)
+    data_frame[column_name].hist(bins=20)
+    plt.title('Histogram ' + column_name)
+    plt.show()
+
+
+def draw_column_histogram_string(data_frame, column_name):
+    """Plots the histogram graph of the given column which has string value.
+
+    :param data_frame: pandas.dataframe
+    :param column_name: string
+    :return: None
+    """
+    # ### print(data_frame[column_name].describe())
+
+    # sample_data = data_frame.sample(n=10000, random_state=1)
+    values = pd.Series(data_frame[column_name])
+    d = pd.DataFrame({column_name: values})
+    d.apply(pd.value_counts).plot(kind='bar', subplots=True)
+    # plt.title('Histogram ' + column_name)
+    plt.show()
+
+
+def draw_scatter_visualization_of_two_column(cars, column_1, column_2):
+    """Plots scatter graph for comparison of two given columns.
+
+    :param cars: dataframe
+    :param column_1: string
+    :param column_2: string
+    :return: None
+    """
+    plt.scatter(cars[column_1], cars[column_2])
+    plt.xlabel(column_1)
+    plt.ylabel(column_2)
+    plt.show()
+
+
+# ############################################################################# #
+# ########################## DATA INSPECTION METHODS ########################## #
 
 def describe_data_frame(cars):
     """Shows the highlights of the dataframe to have a general view.
 
-    :param cars:
-    :return:
+    :param cars: pandas.dataframe
+    :return: pandas.dataframe
     """
 
     # calculates the general information for the dataframe
     cars_describe = cars.describe(include='all').loc[['count', 'unique', 'top', 'freq']]
-    # print(cars_describe)
 
     unique_value_list = []
     for column in cars:
         unique_value_list.append(cars[column].unique())
         # print("{}'s has {} unique_values: {}\n".format(column, len(cars[column].unique()), cars[column].unique()))
 
-    #print(unique_value_list)
     # insert unique values to table
     cars_describe_transpose = cars_describe.transpose()
     cars_describe_transpose["unique_value_list"] = unique_value_list
 
-    # Create a Pandas Excel writer using XlsxWriter as the engine.
-    writer = pd.ExcelWriter('output/cars_describe.xlsx', engine='xlsxwriter')
-    # Convert the dataframe to an XlsxWriter Excel object.
-    cars_describe_transpose.to_excel(writer, sheet_name='cars_describe')
+    # export dataframe to excel
+    # ### data_frame_to_excel(cars_describe_transpose, 'output/cars_describe.xlsx')
 
-    # Close the Pandas Excel writer and output the Excel file.
-    writer.save()
+    return cars_describe_transpose.transpose()
 
 
 def show_empty_records(cars):
-    """Prints the total missing value for each column.
+    """Prints the total missing value for each column and draw bar graph.
 
     :param cars: data frame
     :return: prints values and draw bar graph
@@ -234,28 +347,92 @@ def show_empty_records(cars):
     plt.xticks(rotation=90)
 
 
-def draw_column_histogram(data_frame, column_name):
+def regression_model(clean_data):
 
-    print(data_frame[column_name].describe())
+    cleaned_data = clean_data[['vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model',
+                               'kilometer', 'fuelType', 'brand', 'notRepairedDamage', 'price']]
 
-    # sample_data = data_frame.sample(n=10000, random_state=1)
-    data_frame[column_name].hist(bins=20)
-    plt.title('Histogram ' + column_name)
+    # encode the data
+    cleaned_encoded_data = cleaned_data.apply(preprocessing.LabelEncoder().fit_transform)
+
+    # print(cleaned_encoded_data.head())
+    # ### print("encoded: {}".format(cleaned_encoded_data))
+
+    # Instantiate the model
+    linear_regression_model = linear_model.LinearRegression()
+
+    # fit the model. first parameter attributes. second parameter is result(price in this model).
+    linear_regression_model.fit(cleaned_encoded_data.iloc[:, :9], cleaned_encoded_data.iloc[:, 9])
+
+    # Regression coefficients
+    print("coefficient : {}".format(linear_regression_model.coef_))
+
+    # Model intercept
+    print("model_intercept: {}".format(linear_regression_model.intercept_))
+
+    # ############################################################################# #
+    # ################################ VALIDATION ################################# #
+
+    from sklearn.model_selection import train_test_split
+
+    # Split into train and validation
+    x_train, x_test, y_train, y_test = train_test_split(cleaned_encoded_data.iloc[:, :9],
+                                                        cleaned_encoded_data.iloc[:, 9],
+                                                        test_size=0.3)
+
+    # Display data shape
+    print("cleaned_shape: {}\n"
+          "x_train_shape: {}\n"
+          "y_train_shape: {}\n"
+          "x_test_shape : {}\n"
+          "y_test_shape : {}\n"
+          .format(cleaned_encoded_data.shape, x_train.shape, y_train.shape, x_test.shape, y_test.shape))
+
+    # Instantiate the model
+    model_sklearn_tv = linear_model.LinearRegression()
+
+    # fit the model
+    model_sklearn_tv.fit(x_train, y_train)
+
+    # LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
+
+    y_pred = model_sklearn_tv.predict(x_test)
+    print("y_pred_shape: {}\n".format(y_pred.shape))
+
+    # Find error : RMSE
+    print("RMSE ERROR: {}".format(np.sqrt(np.mean((y_test - y_pred)**2))))
+
+
+
+    # print(y_pred)
+    y_pred_list = y_pred.tolist()
+    y_test_list = y_test.tolist()
+
+    a = y_test_list[:200]
+    b = y_pred_list[:200]
+    print(a)
+    print(b)
+    print([abs(x - y) for x, y in zip(a, b)])
+
+    """
+    result = y_test
+    se = pd.Series(y_pred_list)
+    result['prediction'] = se.values
+    print(result.head())
+    # data_frame_to_excel(y_test,'output/result.excel')
+
+    # Plot outputs
+    plt.scatter(x_test, y_test,  color='g')
+    plt.plot(x_test, model_sklearn_tv.predict(x_test), color='k', linewidth=3)
+
     plt.show()
+    """
 
-
-def draw_column_histogram_string(data_frame, column_name):
-
-    print(data_frame[column_name].describe())
-
-    # sample_data = data_frame.sample(n=10000, random_state=1)
-    values = pd.Series(data_frame[column_name])
-    d = pd.DataFrame({column_name:values})
-    d.apply(pd.value_counts).plot(kind='bar', subplots=True)
-    #plt.title('Histogram ' + column_name)
-    plt.show()
-
+    # MAE mean absolute error. best value is 0.0
+    from sklearn.metrics import mean_absolute_error
+    from sklearn.metrics import mean_squared_error
+    print("mean_absulute_error: {}".format(mean_absolute_error(y_test, y_pred)))
+    print("mean_squared_error: {}".format(mean_squared_error(y_test, y_pred)))
 
 if __name__ == "__main__":
     main()
-

@@ -1,3 +1,7 @@
+"""
+LINEAR REGRESSION GRAPH PLOT CODE SAMPLE
+"""
+
 print(__doc__)
 
 
