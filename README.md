@@ -1,9 +1,9 @@
 
 <body>
-<div align="left">
+<div align="justify">
 
 <h1>1.	DATASET</h1>
-<p align="left">
+<p>
 1.	<b>dateCrawled</b> : when this ad was first crawled, all field-values are taken from this date <br>
 2.	<b>name</b> : "name" of the car <br>
 3.	<b>seller</b> : private or dealer <br>
@@ -27,17 +27,17 @@
 </p>
 
 <h1>2.	DATA EXPLORATION</h1>
-<p align="left">
+<p>
 Dataset consists of 371528 rows and 20 columns [dateCrawled, name, seller, offerType, price, abtest, vehicleType, yearOfRegistration, gearbox, powerPS, model, kilometer, monthOfRegistration, fuelType, brand, notRepairedDamage, dateCreated, nrOfPictures, postalCode, lastSeen]. 
 </p>
 
 <img src="image/missing_value.png" alt="Table 1"><br> 
 
-<p align="left">
+<p>
 Figure 1: Missing Value<br>
 According to Figure 1:<br>
 </p>
-<ul align="left">
+<ul>
    <li>
    5 columns [vehicleType, gearbox, model, fuelType, notRepairedDamage] have missing values. Depending on the model, these columns can be removed completely. However, these columns could be important for the model. So, the records that have null values can be removed. By removing the null values column can be saved for the model. In the table, notRepairedDamage column has 72060 missing value which is the 19% of the whole dataset. In this case, removing each record is not the best option. It seems better to drop whole column.
    </li>
@@ -47,7 +47,7 @@ According to Figure 1:<br>
    </li>
 </ul>
 
-<p align="left">According to Table 1 and the Histogram Graph of the columns:</p>
+<p>According to Table 1 and the Histogram Graph of the columns:</p>
 <ul>
    <li>dateCrawled (280500), name (233531), lastSeen (182806) columns have too many unique values. Depending on the learning model, these columns can be dropped.</li>
 </ul>
