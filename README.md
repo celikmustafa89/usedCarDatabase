@@ -1,5 +1,14 @@
-=== Run information ===
 
+
+<html>
+<head>
+<title>Predictions for dataset clean_data-weka.filters.unsupervised.attribute.Remove-R1,5,8</title>
+</head>
+<body>
+<div align="center">
+
+<h3>=== Run information ===</h3>
+<p>
 Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
 Relation:     clean_data-weka.filters.unsupervised.attribute.Remove-R1,5,8
 Instances:    243422
@@ -12,10 +21,10 @@ Attributes:   7
               notRepairedDamage
               price
 Test mode:    split 66.0% train, remainder test
+</p>
+<h3>=== Classifier model (full training set) ===</h3>
 
-=== Classifier model (full training set) ===
-
-
+<p>
 Linear Regression Model
 
 price =
@@ -29,15 +38,8 @@ price =
 -321897.5597
 
 Time taken to build model: 0.27 seconds
-
-=== Predictions on test split ===
-
-<html>
-<head>
-<title>Predictions for dataset clean_data-weka.filters.unsupervised.attribute.Remove-R1,5,8</title>
-</head>
-<body>
-<div align="center">
+</p>
+<h3>=== Predictions on test split ===</h3>
 <h3>Predictions for dataset clean_data-weka.filters.unsupervised.attribute.Remove-R1,5,8</h3>
 <table border="1">
 <tr>
