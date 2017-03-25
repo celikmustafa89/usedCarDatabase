@@ -1,6 +1,6 @@
 <body>
 <div align="justify">
-    <h1>USED CAR PRICE PREDICTION using LINEAR REGRESSION</h1>
+    <h1 align="center">USED CAR PRICE PREDICTION using LINEAR REGRESSION</h1>
 
     <h1><font color="#ffbf00">1. DATASET</font></h1>
     <p>
