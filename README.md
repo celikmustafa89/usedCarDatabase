@@ -250,7 +250,7 @@
             Relative absolute error: <font color="#ffbf00">56.7852 %</font><br>
             Root relative squared error: <font color="#ffbf00">61.7716 %</font><br>
             Total Number of Instances: <font color="#ffbf00">82763</font> <br><br>
-        <h1><font color="#C70039" align="center">PYTHON SKLEARN LINEAR REGRESSION MODEL RESULT</font></h1>
+        <h1 align="center"><font color="#C70039">PYTHON SKLEARN LINEAR REGRESSION MODEL RESULT</font></h1>
             <p>Root mean squared error: 555.6768635632562<br></p>
             <table border="2">
                 <tr>
@@ -380,7 +380,7 @@
                     <td align="right">724.854</td>
                 </tr>
             </table>
-        <h1><font color="#C70039" align="center">WEKA MODEL RESULT</font></h1>
+        <h1 align="center"><font color="#C70039">WEKA MODEL RESULT</font></h1>
             <p>Root mean squared error: 4958.1553<br></p>
             <table border="2">
                 <tr>
