@@ -1,7 +1,7 @@
 <body>
 <h1 align="center"> <font color="#C70039"> USED CAR PRICE PREDICTION using LINEAR REGRESSION</font></h1>
 <div align="justify">
-        <h1><font color="#ffbf00">1. DATASET</font></h1>
+        <h1><font color="#C70039">1. DATASET</font></h1>
         <p>1. <b><font color="#ffbf00">dateCrawled</font></b> : <i>when this ad was first crawled, all field-values are
             taken from this date</i> <br>
             2. <b><font color="#ffbf00">name</font></b> : <i>"name" of the car </i><br>
@@ -27,7 +27,7 @@
             19. <b><font color="#ffbf00">postalCode</font></b> : <i>code that shows the location of the car</i><br>
             20. <b><font color="#ffbf00">lastSeenOnline</font></b> : <i>when the crawler saw this ad last online</i><br>
         </p>
-        <h1><font color="#ffbf00">2. DATA EXPLORATION</font></h1>
+        <h1><font color="#C70039">2. DATA EXPLORATION</font></h1>
             <p>
                 Dataset consists of <b><font color="#ffbf00">371528 rows</font></b> and <b><font color="#ffbf00">20
                 columns</font></b> [<i>dateCrawled, name, seller, offerType, price, abtest, vehicleType, yearOfRegistration,
@@ -195,7 +195,7 @@
                 </li>
             </ul>
             <img src="image/power.png">
-        <h1><font color="#ffbf00">3. PROBLEM SETTING</font></h1>
+        <h1><font color="#C70039">3. PROBLEM SETTING</font></h1>
             <p>The problem is predicting the actual price of the car by looking given parameters.<br>
                 There are <b><font color="#ffbf00">371528</font></b> records in dataset. <b><font color="#ffbf00">243422</font></b>
                 of them are remaining after data cleaning process.<br>
@@ -203,7 +203,7 @@
                 One of them uses the <b><font color="#ffbf00">30%</font></b> of the dataset as a test set.<br>
                 Other one uses <b><font color="#ffbf00">33%</font></b> for testing issue
             </p>
-        <h1><font color="#ffbf00">4. MODELLING</font></h1>
+        <h1><font color="#C70039">4. MODELLING</font></h1>
             <p>
                 Before the implementation of the model. Dataset is cleaned using python libraries, and total number of column is
                 decreased to 10 [<i>'vehicleType', 'yearOfRegistration', 'gearbox', 'powerPS', 'model','kilometer', 'fuelType',
@@ -226,7 +226,7 @@
                 attributes are used for learning.<br>
                 <font color="#ffbf00">33 percentage</font> of the dataset is used for testing.<br>
             </ul>
-        <h1><font color="#ffbf00">5. CONCLUSION and IMPROVEMENT POINTS</font></h1>
+        <h1><font color="#C70039">5. CONCLUSION and IMPROVEMENT POINTS</font></h1>
             <p>
                 First 20 prediction of the both model is on the below table.<br>
                 Python Sklearn Regression model has lower error than the WEKA model.<br>
@@ -250,7 +250,7 @@
             Relative absolute error: <font color="#ffbf00">56.7852 %</font><br>
             Root relative squared error: <font color="#ffbf00">61.7716 %</font><br>
             Total Number of Instances: <font color="#ffbf00">82763</font> <br><br>
-        <font color="#ffbf00"><h1>PYTHON SKLEARN LINEAR REGRESSION MODEL RESULT</h1></font>
+        <font color="#C70039"><h1>PYTHON SKLEARN LINEAR REGRESSION MODEL RESULT</h1></font>
             <p>Root mean squared error: 555.6768635632562<br></p>
             <table border="2">
                 <tr>
@@ -380,7 +380,7 @@
                     <td align="right">724.854</td>
                 </tr>
             </table>
-        <font color="#ffbf00"><h1>WEKA MODEL RESULT</h1></font>
+        <font color="#C70039"><h1>WEKA MODEL RESULT</h1></font>
             <p>Root mean squared error: 4958.1553<br></p>
             <table border="2">
                 <tr>
