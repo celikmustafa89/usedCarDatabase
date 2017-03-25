@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>celikmustafa89</title>
-</head>
-
-
 <body>
 <div align="justify">
     <h1>USED CAR PRICE PREDICTION using LINEAR REGRESSION</h1>
@@ -583,4 +575,4 @@
 
 </div>
 </body>
-</html>
+
