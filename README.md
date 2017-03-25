@@ -1,5 +1,5 @@
 <body>
-<h1 align="center">USED CAR PRICE PREDICTION using LINEAR REGRESSION</h1>
+<h1 align="center"> <font color="#C70039"> USED CAR PRICE PREDICTION using LINEAR REGRESSION</font></h1>
 <div align="justify">
         <h1><font color="#ffbf00">1. DATASET</font></h1>
         <p>1. <b><font color="#ffbf00">dateCrawled</font></b> : <i>when this ad was first crawled, all field-values are
